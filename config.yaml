@@ -1,0 +1,15 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:\Users\Apps-1\Desktop\vtsFIT-main\data  # dataset root dir
+train: images\train  # train images (relative to 'path') 118287 images
+val: images\val  # val images (relative to 'path') 5000 images
+#test: test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Keypoints
+kpt_shape: [15, 3]  # number of keypoints, number of dims (2 for x,y or 3 for x,y,visible)
+flip_idx: [0, 4, 5, 6, 1, 2, 3, 7, 8, 10, 11, 12, 9, 13, 14]
+
+# Classes
+names:
+  0: quadruped
+
+
